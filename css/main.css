@@ -1,0 +1,144 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   Global
+   ========================================================================== */
+
+body{ font: "proxima-nova", Arial, Helvetica, sans-serif; 
+ background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */  background-color: #233141; 
+  color:#fff; }
+body, html{ height:100%; }
+
+@font-face {
+    font-family: 'proxima-nova';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+#wrapper{ padding:100px 0 60px 100px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+#loader{ width:100%; height:2000px; background:#000; position:absolute; top:0; left:0 }
+#loader img{ margin-left:47%; margin-top:300px }
+
+a, a:visited{ color:#fff; text-decoration:none; color:#9f9f9f }
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.2em;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+p{ font-family: 'proxima-nova', sans-serif; font-style: normal; font-weight: 300; font-size:1.1em; line-height:1.4em; cursor:default; }
+
+body.pcuser p, body.pcuser .works li:first-child, body.pcuser .companies_top div span{ font-family: Arial !important; font-size:1em !important; line-height:1.6em !important; }
+
+.text {
+    padding-top: 10%;
+}
+
+.info{ max-width:500px; height:68px; text-indent:90px; line-height: 68px; font-style:italic; margin-top:30px; margin-bottom:30px }
+.text{ max-width:520px; margin:30px 0; }
+
+.words{ margin-bottom:30px }
+.works{ margin-bottom:20px }
+.words li{ font-size: 0.8em; background:#fff; padding:5px; border-radius:5px; list-style:none; color:#000; display:inline; float:left; margin:10px 10px 0 0; line-height:1em; cursor:default; }
+.works li{ margin-bottom:3px; cursor:default; }
+.works li a:before{ content:""; display:inline-block; width:4px; height:4px; background:#fff; vertical-align:middle; margin:-4px 7px 0 0; opacity:.2;
+   -webkit-transition: opacity .2s ease;
+   -moz-transition: opacity .2s ease;
+   -ms-transition: opacity .2s ease;
+   -o-transition: opacity .2s ease;
+   transition: opacity .2s ease;
+}
+.works li a.list-none:before{ display:none; }
+.works li a:hover:before{ opacity:1; }
+.works li:first-child{ margin-bottom:.5em; font-family: 'DINPro-Light'; font-size:1.1em; }
+.works li:first-child:before{ display:none; }
+.works li img{ vertical-align: middle; margin: -1px 0 0 7px; }
+.works span{ font-style:italic; display:inline-block; margin-left:3px; }
+.contact{ clear:left; padding:30px 0; max-width: 562px; }
+
+.companies{ height:66px; margin:35px 0; overflow:hidden; position:relative; }
+.companies_top{ height:100%; }
+.companies_top li{ display:inline-block; width:112px; height:100%; text-align:center; vertical-align:middle; position:relative; cursor:pointer; margin-right:12px; }
+.companies_top li > div{ position:absolute; left:0; top:80px; width:100%;
+   -webkit-transition: top .3s ease;
+   -moz-transition: top .3s ease;
+   -ms-transition: top .3s ease;
+   -o-transition: top .3s ease;
+   transition: top .3s ease;
+}
+.companies_top div span{ line-height:1.5em; width:100%; display:block; margin:0 auto; font-family: 'DINPro-Light'; font-size:1.1em; }
+.companies_top li > img{
+   -webkit-transition: opacity .2s ease;
+   -moz-transition: opacity .2s ease;
+   -ms-transition: opacity .2s ease;
+   -o-transition: opacity .2s ease;
+   transition: opacity .2s ease;
+}
+.thetwelve img{ margin-top:20px; }
+.companies_bottom{ position:absolute; left:0; bottom:0; height:4px; }
+.companies_bottom li{ width:112px; height:4px; background:#fff; display:inline-block; vertical-align:top; margin-right:12px; }
+
+
+.companies_top li:hover > img{ opacity:0; }
+.companies_top li:hover > div{ top:8px; }
+
+#anim{ position:fixed; z-index:-10; top:0; left:0; opacity:0.1; display:none; }
+canvas{ display:block; vertical-align:bottom }
+
+#particles-js{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:-10;
+  top:0;
+  left:0;
+}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 620px) {
+   #wrapper { padding:30px; text-align:center}
+   h1{ margin:0 auto 30px auto; }
+   h2{ display:none }
+   p, li{ font-size:1.2rem; }
+   .companies, .works li:first-child{ display:none; }
+}
